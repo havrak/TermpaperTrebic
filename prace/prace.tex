@@ -41,13 +41,14 @@
 \usepackage{dcolumn}        % lepší zarovnání sloupců v tabulkách
 \usepackage{booktabs}       % lepší vodorovné linky v tabulkách
 \usepackage{paralist}       % lepší enumerate a itemize
-\usepackage{listings}				% vkládání kódu
 \usepackage{caption}				%	popisky
 \usepackage{dirtree}				% strom souborů
 \usepackage[bottom]{footmisc}  % poznámky pod čarou vespod
 
 \usepackage{color}
 \usepackage{forest}					% na rodokmeny
+\usepackage{natbib}
+\setcitestyle{authoryear}
 
 \definecolor{pblue}{rgb}{0.13,0.13,1}
 \definecolor{pgreen}{rgb}{0,0.5,0}
@@ -114,9 +115,6 @@ TODO
 }
 
 
-\def\forestConf{
-}
-
 %% Balíček hyperref, kterým jdou vyrábět klikací odkazy v PDF,
 %% ale hlavně ho používáme k uložení metadat do PDF (včetně obsahu).
 %% Většinu nastavítek přednastaví balíček pdfx.
@@ -138,19 +136,22 @@ TODO
 \renewcommand{\footrulewidth}{0.4pt}
 }
 
-%\captionsetup{labelformat=empty}
 
 
 \begin{document}
+
 \include{titulka}
 
+%\pagenumbering{arabic}
+%\setcounter{page}{1}
 \tableofcontents
 \newpage
-\pagenumbering{arabic}
-\setcounter{page}{1}
 
 
 \include{uvod}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
 
 \chapter{Počátky města Třebíče}
 
@@ -173,8 +174,8 @@ Po dvou letech vlády Bořivoje se však Oldřich a Litold opět vrátily na sv�
 Již při cestě zpět si uvědomují, že západní hranice jejich údělu jsou příliš daleko od hradů v Brně a Znojmě.
 Z tohoto důvodu v roce 1101 zakládají v prostorách Třebečského lesa téměř na hranicích s Přibyslavickem benediktýnský klášter.
 Klášter tedy není založen v duchu šíření víry, ale má sloužit jako předsunuté opevnění a kolonizační centrum.
-Roku 1101 je postaven kostelík sv. Benedikta, který o 3 roky později vysvětil pražský biskup Heřman.
-Dále roku 1109 je vysvěcen biskupem olomouckým Janem II. samotný klášterní chrám Nanebevztí Pany Marie.
+Ji6 v roce 1101\footnote{\cite{Uhlir1978}, strana 20} je postaven kostelík sv. Benedikta, který o 3 roky později vysvětil pražský biskup Heřman.
+Dále roku 1109\footnote{\cite{Uhlir1978}, strana 20} je vysvěcen biskupem olomouckým Janem II. samotný klášterní chrám Nanebevztí Pany Marie.
 Klášter ihned po založení dostává darování, a to jak od Oldřicha a Litolda, tak i od jejich nástupců.
 Samotný Litold (\CrossOpenShadow 1112) a Oldřich (\CrossOpenShadow 1113) jsou dle slov Tomáše Pěšinky\footnote{Tomáš Petřinka z Čechorodu -- biskup, dějepisec, autor díla Mars Moravicus} pochováni v klášteře.
 
@@ -216,14 +217,14 @@ Samotný Litold (\CrossOpenShadow 1112) a Oldřich (\CrossOpenShadow 1113) jsou 
 			]
 		]
 		\end{forest}
-		\caption[Rodokmen panovníků]{
+		\caption[Rodokmen panovníků, vlastní tvorba]{
 		\centering
 			Rodokmen panovníků figurujících v rané historii kláštera, písmeno \textbf{D} značí knížata, která darovala území klášteru
 		}
 \end{figure}
 \footnotetext{Dle opisu Kroniky Kosmovy, daruje vsi Břetislav, nejspíše se jedná o tohoto}
 
-Bohužel je jen málo pramenů z této doby, jako jediný zdroj o rané historii klášter máme Třebíčský (Brněnský) opis Kosmovy Kroniky.
+Bohužel je jen málo pramenů z této doby, jako jediný zdroj o rané historii klášter máme Třebíčský (Brněnský) opis Kosmovy Kroniky\footnote{\cite{Uhlir1978}, strana 18}.
 Do něho byla klášterním mnichem připsaná zmínka k roku 1115 o založení kláštera.
 Mnich také uvádí jaké vsi byly postupně darovány klášteru.
 Údaje jsou však sporné a pravděpodobně vycházel z pozdějších zdrojů, neboť počet darovaných vsí je dle vpisku 73, což značně převyšuje i pozdější čísla.
@@ -238,28 +239,22 @@ Vhodná poloha kláštera a jeho hradby přispěly k vzniku tržní osady.
 Ta se samovolně začínala formovat přímo pod klášterem na levém břehu řeky, klášterní hradby nebyly totiž dost rozsáhle aby celou osadu pojaly.
 Nově vzniklá obec Podklášteří ihned začala přitahovat kupce a židy z širokého okolí, což vedlo k jejímu rychlému růstu.
 Za nedlouho tak začala být omezována svým umístěním, byla totiž obehnána skálami a ohrožována záplavami řeky Jihlavy.
-Podklášteří proto postupně ztrácelo na svém významu jakožto tržní osada a mnozí kupci odešli, zůstaly zde však židé, kteří položily základ židovskému městu.
+Podklášteří proto postupně ztrácelo na svém významu jakožto tržní osada a mnozí kupci odešli, zůstaly zde však židé, kteří položily základ židovskému městu\footnote{\cite{Uhlir1978}, strana 22}.
 
 \subsection{vznik Starého města}
 %% přepsat
 V 1. třetině 12. století vznikla na příkaz klášterní vrchnosti nová tržní osada, dnešní Staré město.
 Ta se tentokrát nacházela na pravém břehu řeky Jihlavy, což umožňovalo více prostoru pro rozvoj.
-Ihned po vytvoření se také začala tvořit aglomerace okolo nové osady, můžeme zmínit ves na Polánce, či vsi Kosovice, Arklebice a Horku, jenž opat Lukáš roku 1225 vyměňil se znojemskou šlechtičnou za ves Oslavany, která se nacházely dál od kláštera.
+Ihned po vytvoření se také začala tvořit aglomerace okolo nové osady, můžeme zmínit ves na Polánce, či vsi Kosovice, Arklebice a Horku, jenž opat Lukáš roku 1225 vyměnil se znojemskou šlechtičnou za ves Oslavany, která se nacházely dál od kláštera.
 Stejně jako Podklášteří je byla i nová osada omezena svým umístěním, což s postupem času opět začalo brzdit vývoj na území.
 Proto ještě v 1. polovině 13. století bylo založeno Nové město.
 
 
 \section{Založení města Třebíč}
-
 Město Třebíč bylo podobně jako Staré Město založeno z vůle opata, jenž si vyžádal povolení u krále Přemysla Otakara II. %% nebo Přemysl Otakar II.
 Z toho důvodu se také o městu Třebíč hovoříme v této době jakožto o poddanském městu náležící církevní vrchnosti.
 Opět se jednalo o strategický krok, města totiž disponovala různými privilegii, jako právo trhu či právo hradební, právem vářečným již disponovala Staržečska\footnote{Jiné označení Starého města, dnes čtvrť v Třebíči}.
-Prví písemná zmínka o městu Třebíč pochází z roku 1277, v níž opat Martin oceňuje lokátora\footnote{člověk, který zakládá města/vesnice a vymezuje parcely} Heřmana, který město Třebíč založil.
-
-%\subsubsection{Správa města}
-%V čele města je v jeho počátcích rychtář, v polovině 14. století má lid snahu získat větší kontrolou nad rozhodováním, postupně se tedy přejde k radnici.
-%Samotné právo města je založeno na větší a menší privilegium města Brna, přinesené původně německými kolonizátory v roce 1243.
-%To se koncem 13. století stává součástí městského práva ustanovení o samosprávě.
+Prví písemná zmínka o městu Třebíč pochází z roku 1277, v níž opat Martin oceňuje lokátora Heřmana\footnote{\cite{Uhlir1978}, strana 27}, který město Třebíč založil.
 
 \subsubsection{Přestavba kláštera}
 
@@ -267,19 +262,6 @@ Během 13. století dochází k rozsáhle přestavbě kláštera.
 Jsou vztyčeny definitivní klášterní budovy a roku 1260 je také dokončen klášterní chrám.
 Společně s přestavnou budov dochází k zlepšení opevnění kláštera.
 Bohužel během Bitvy o Třebíč\footnote{12. květen — 9. červen 1468, součást česko-uherských válek (Druhá válka husitská)} byla většina staveb zničena či poškozena.
-
-\nocite{Uhlir1978}
-
-
-
-
-
-
-
-
-
-
-
 
 
 \include{zaver}
