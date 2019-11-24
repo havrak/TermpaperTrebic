@@ -1,0 +1,291 @@
+%%% Hlavní soubor. Zde se definují základní parametry a odkazuje se na ostatní části. %%%
+
+%% Verze pro jednostranný tisk:
+% Okraje: levý 40mm, pravý 25mm, horní a dolní 25mm
+% (ale pozor, LaTeX si sám přidává 1in)
+\documentclass[a4paper,oneside,12p]{report}
+%\documentclass[a4paper,oneside,12p,twoside]{report}
+\setlength\textwidth{155mm}
+\setlength\textheight{237mm}
+%\setlength\oddsidemargin{00mm}
+\setlength\oddsidemargin{05mm}
+\setlength\evensidemargin{05mm}
+\let\openright=\clearpage
+
+
+%% Vytváříme PDF/A-2u
+\usepackage[a-2u]{pdfx}
+
+%% Přepneme na českou sazbu a fonty Latin Modern
+\usepackage[czech]{babel}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+%% Použité kódování znaků: obvykle latin2, cp1250 nebo utf8:
+\usepackage[utf8]{inputenc}
+
+%%% Další užitečné balíčky (jsou součástí běžných distribucí LaTeXu)
+\usepackage{amsmath}        % rozšíření pro sazbu matematiky
+\usepackage{amsfonts}       % matematické fonty
+\usepackage{amsthm}         % sazba vět, definic apod.
+\usepackage{bbding}         % balíček s nejrůznějšími symboly
+			   										% (čtverečky, hvězdičky, tužtičky, nůžtičky, ...)
+\usepackage{bm}             % tučné symboly (příkaz \bm)
+\usepackage{graphicx}       % vkládání obrázků
+\usepackage{fancyhdr}				% možnost slylizovat záhlaví
+\usepackage{fancyvrb}       % vylepšené prostředí pro strojové písmo
+\usepackage{indentfirst}    % zavede odsazení 1. odstavce kapitoly
+\usepackage[nottoc]{tocbibind} % zajistí přidání seznamu literatury,
+\usepackage{icomma}         % inteligetní čárka v matematickém módu
+\usepackage{dcolumn}        % lepší zarovnání sloupců v tabulkách
+\usepackage{booktabs}       % lepší vodorovné linky v tabulkách
+\usepackage{paralist}       % lepší enumerate a itemize
+\usepackage{listings}				% vkládání kódu
+\usepackage{caption}				%	popisky
+\usepackage{dirtree}				% strom souborů
+\usepackage[bottom]{footmisc}  % poznámky pod čarou vespod
+
+\usepackage{color}
+\usepackage{forest}					% na rodokmeny
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+%%% Údaje o práci
+
+\def\NazevSkoly{Gymnázium, Praha 6, Arabská 14}
+% Název oboru včetně počátečního 'Obor'.
+\def\NazevOboru{Dějepis}
+
+% Název práce v jazyce práce (přesně podle zadání)
+\def\NazevPrace{Židovké město v Třebíči}
+
+% Název práce v angličtině
+\def\NazevPraceEN{Jewish town in Třebíč}
+
+% Název práce v němčině
+\def\NazevPraceDE{Jüdische Stadt in Třebíč}
+
+% Jméno auto
+\def\AutorPrace{Havránek Kryštof 2.E}
+
+% Rok odevzdání
+\def\RokOdevzdani{2020}
+% Měsíc odevzdání
+\def\MesicOdevzdani{Květen}
+
+% Vedoucí práce: Jméno a příjmení s~tituly
+\def\Vedouci{PhDr. Lenka Dvořáková }
+
+% Nepovinné poděkování (vedoucímu práce, konzultantovi, tomu, kdo
+% zapůjčil software, literaturu apod.)
+\def\Podekovani{%
+\textbf{Poděkování}
+
+TODO
+
+PhDr. Lenka Dvořáková
+
+Milan Krčmář (zjisit si titul!)
+
+
+}
+
+% Abstrakt (doporučený rozsah cca 80-200 slov; nejedná se o zadání práce)
+\def\Abstrakt{%
+TODO
+}
+\def\AbstraktEN{%
+TODO
+}
+\def\AbstraktDE{%
+TODO
+}
+
+% 3 až 5 klíčových slov (doporučeno), každé uzavřeno ve složených závorkách
+\def\KlicovaSlova{%
+{klíčová} {slova}
+}
+\def\KlicovaSlovaEN{%
+{key} {words}
+}
+
+
+\def\forestConf{
+}
+
+%% Balíček hyperref, kterým jdou vyrábět klikací odkazy v PDF,
+%% ale hlavně ho používáme k uložení metadat do PDF (včetně obsahu).
+%% Většinu nastavítek přednastaví balíček pdfx.
+\hypersetup{unicode}
+\hypersetup{breaklinks=true}
+
+%% Definice různých užitečných maker (viz popis uvnitř souboru)
+\include{makra}
+
+%% Titulní strana a různé povinné informační strany
+\fancypagestyle{plain}{
+\fancyhead[C]{}
+\fancyhead[L]{Ročníková práce - Gymnázium, Praha 6, Arabská 14}
+\fancyhead[R]{\textbf{Židovské město ve Třebíči}}
+\fancyfoot[L]{Vypracoval: Havránek Kryštof 2.E (Programování)}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+}
+
+%\captionsetup{labelformat=empty}
+
+
+\begin{document}
+\include{titulka}
+
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+\include{uvod}
+
+\chapter{Počátky města Třebíče}
+
+\section{Charakteristika města Třebíče}
+
+Třebíč je nepříliš velké město na jihovýchodý části Kraje vysočina.
+I přes jeho velikost, však hrálo velkou roli v historii kraje.
+Má proto i dvě památky UNESCO -- Třebíčskou židovskou čtvrť a baziliku svatého Prokopa.
+Počátky jeho historie jsou však, spíše než s národem židovským, spjaty s benediktýnským klášterem, dnešním zámkem.
+Je možné, že na území Třebečského lesa se nacházelo i prehistorické osídlení, o tom však nemáme důkazy.
+
+\section{Vznik kláštera}
+
+Dějiny kláštera se začínají psát koncem 11. století.
+Jednalo se o dobu kdy na českém i moravském území docházelo k řadě potyček mezi jednotlivými Přemyslovci a moravskými knížeti a právě tyto konflikty měly za následek založení kláštera..
+Nejvíce k založení kláštera napomohlo chování Břetislava II., který jako svého následníka jmenoval svého nevlastního syna Bořivoje II., místo brněnského knížete Oldřicha\footnote{ten měl být králem dle rodové tradice Přemyslovců}.
+Kvůli této a dalším neshodám uspořádal roku 1099 král Břetislav tažení na brněnský hrad, což donutilo Oldřicha a jeho bratra Litolda (lze i Litola), jenž spravoval úděl Znojemský, k útěku.
+Po dvou letech vlády Bořivoje se však Oldřich a Litold opět vrátily na své úděly, využily šance kdy se po smrti Břetislava II Bořivoj II. musel vrátit do Prahy.
+
+Již při cestě zpět si uvědomují, že západní hranice jejich údělu jsou příliš daleko od hradů v Brně a Znojmě.
+Z tohoto důvodu v roce 1101 zakládají v prostorách Třebečského lesa téměř na hranicích s Přibyslavickem benediktýnský klášter.
+Klášter tedy není založen v duchu šíření víry, ale má sloužit jako předsunuté opevnění a kolonizační centrum.
+Roku 1101 je postaven kostelík sv. Benedikta, který o 3 roky později vysvětil pražský biskup Heřman.
+Dále roku 1109 je vysvěcen biskupem olomouckým Janem II. samotný klášterní chrám Nanebevztí Pany Marie.
+Klášter ihned po založení dostává darování, a to jak od Oldřicha a Litolda, tak i od jejich nástupců.
+Samotný Litold (\CrossOpenShadow 1112) a Oldřich (\CrossOpenShadow 1113) jsou dle slov Tomáše Pěšinky\footnote{Tomáš Petřinka z Čechorodu -- biskup, dějepisec, autor díla Mars Moravicus} pochováni v klášteře.
+
+\begin{figure}[h]
+	\centering
+	\begin{forest}
+		for tree={
+    	child anchor=west,
+    	parent anchor=east,
+    	grow=east,
+    	draw,
+    	anchor=west,
+    	edge path={
+     		\noexpand\path[\forestoption{edge}]
+       		(.child anchor) -| +(-5pt,0) -- +(-5pt,0) |-
+       		(!u.parent anchor)\forestoption{edge label};
+    		},
+  	}
+  	[Břetislav I.
+    	[Vrastislav II.
+				[Břetislav II.
+						[Břetislav \textbf{D\footnotemark}
+						]
+						[Bořivoj II. (nevlastní syn)
+						]
+					]
+				]
+			[Kondrád I. Brněnský
+				[Oldřich Brněnský \textbf{D}
+					[Vrastislav \textbf{D}
+					]
+					[Vladislav
+					]
+				]
+				[Litold Znojemský \textbf{D}
+					[Kondrád II. Znojemksý \textbf{D}
+					]
+				]
+			]
+		]
+		\end{forest}
+		\caption[Rodokmen panovníků]{
+		\centering
+			Rodokmen panovníků figurujících v rané historii kláštera, písmeno \textbf{D} značí knížata, která darovala území klášteru
+		}
+\end{figure}
+\footnotetext{Dle opisu Kroniky Kosmovy, daruje vsi Břetislav, nejspíše se jedná o tohoto}
+
+Bohužel je jen málo pramenů z této doby, jako jediný zdroj o rané historii klášter máme Třebíčský (Brněnský) opis Kosmovy Kroniky.
+Do něho byla klášterním mnichem připsaná zmínka k roku 1115 o založení kláštera.
+Mnich také uvádí jaké vsi byly postupně darovány klášteru.
+Údaje jsou však sporné a pravděpodobně vycházel z pozdějších zdrojů, neboť počet darovaných vsí je dle vpisku 73, což značně převyšuje i pozdější čísla.
+Ve vpisku jsou i uvedeny vsi u kterých je pozdější připojení písemně doloženo.
+Existovala také klášterní kronika z roku 1201, jejímž autorem byl opat Tiburcius, ta se však ztratila.
+
+\section{Tržní osady okolo kláštera}
+
+\subsection{Podklášteří}
+
+Vhodná poloha kláštera a jeho hradby přispěly k vzniku tržní osady.
+Ta se samovolně začínala formovat přímo pod klášterem na levém břehu řeky, klášterní hradby nebyly totiž dost rozsáhle aby celou osadu pojaly.
+Nově vzniklá obec Podklášteří ihned začala přitahovat kupce a židy z širokého okolí, což vedlo k jejímu rychlému růstu.
+Za nedlouho tak začala být omezována svým umístěním, byla totiž obehnána skálami a ohrožována záplavami řeky Jihlavy.
+Podklášteří proto postupně ztrácelo na svém významu jakožto tržní osada a mnozí kupci odešli, zůstaly zde však židé, kteří položily základ židovskému městu.
+
+\subsection{vznik Starého města}
+%% přepsat
+V 1. třetině 12. století vznikla na příkaz klášterní vrchnosti nová tržní osada, dnešní Staré město.
+Ta se tentokrát nacházela na pravém břehu řeky Jihlavy, což umožňovalo více prostoru pro rozvoj.
+Ihned po vytvoření se také začala tvořit aglomerace okolo nové osady, můžeme zmínit ves na Polánce, či vsi Kosovice, Arklebice a Horku, jenž opat Lukáš roku 1225 vyměňil se znojemskou šlechtičnou za ves Oslavany, která se nacházely dál od kláštera.
+Stejně jako Podklášteří je byla i nová osada omezena svým umístěním, což s postupem času opět začalo brzdit vývoj na území.
+Proto ještě v 1. polovině 13. století bylo založeno Nové město.
+
+
+\section{Založení města Třebíč}
+
+Město Třebíč bylo podobně jako Staré Město založeno z vůle opata, jenž si vyžádal povolení u krále Přemysla Otakara II. %% nebo Přemysl Otakar II.
+Z toho důvodu se také o městu Třebíč hovoříme v této době jakožto o poddanském městu náležící církevní vrchnosti.
+Opět se jednalo o strategický krok, města totiž disponovala různými privilegii, jako právo trhu či právo hradební, právem vářečným již disponovala Staržečska\footnote{Jiné označení Starého města, dnes čtvrť v Třebíči}.
+Prví písemná zmínka o městu Třebíč pochází z roku 1277, v níž opat Martin oceňuje lokátora\footnote{člověk, který zakládá města/vesnice a vymezuje parcely} Heřmana, který město Třebíč založil.
+
+%\subsubsection{Správa města}
+%V čele města je v jeho počátcích rychtář, v polovině 14. století má lid snahu získat větší kontrolou nad rozhodováním, postupně se tedy přejde k radnici.
+%Samotné právo města je založeno na větší a menší privilegium města Brna, přinesené původně německými kolonizátory v roce 1243.
+%To se koncem 13. století stává součástí městského práva ustanovení o samosprávě.
+
+\subsubsection{Přestavba kláštera}
+
+Během 13. století dochází k rozsáhle přestavbě kláštera.
+Jsou vztyčeny definitivní klášterní budovy a roku 1260 je také dokončen klášterní chrám.
+Společně s přestavnou budov dochází k zlepšení opevnění kláštera.
+Bohužel během Bitvy o Třebíč\footnote{12. květen — 9. červen 1468, součást česko-uherských válek (Druhá válka husitská)} byla většina staveb zničena či poškozena.
+
+\nocite{Uhlir1978}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\include{zaver}
+
+\include{literatura}
+
+\listoffigures
+\openright
+\end{document}
