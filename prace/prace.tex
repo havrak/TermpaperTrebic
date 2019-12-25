@@ -44,11 +44,13 @@
 \usepackage{caption}				%	popisky
 \usepackage{dirtree}				% strom souborů
 \usepackage[bottom]{footmisc}  % poznámky pod čarou vespod
+\usepackage{bibentry}
+\nobibliography*
 
 \usepackage{color}
 \usepackage{forest}					% na rodokmeny
 \usepackage{natbib}
-\setcitestyle{authoryear}
+%\setbibentrystyle{author}
 
 \definecolor{pblue}{rgb}{0.13,0.13,1}
 \definecolor{pgreen}{rgb}{0,0.5,0}
@@ -91,8 +93,6 @@ TODO
 PhDr. Lenka Dvořáková
 
 Milan Krčmář (zjisit si titul!)
-
-
 }
 
 % Abstrakt (doporučený rozsah cca 80-200 slov; nejedná se o zadání práce)
@@ -128,7 +128,7 @@ TODO
 \fancypagestyle{plain}{
 \fancyhead[C]{}
 \fancyhead[L]{Ročníková práce - Gymnázium, Praha 6, Arabská 14}
-\fancyhead[R]{\textbf{Židovské město ve Třebíči}}
+\fancyhead[R]{\textbf{Židovské město v Třebíči}}
 \fancyfoot[L]{Vypracoval: Havránek Kryštof 2.E (Programování)}
 \fancyfoot[C]{}
 \fancyfoot[R]{\thepage}
@@ -142,8 +142,6 @@ TODO
 
 \include{titulka}
 
-%\pagenumbering{arabic}
-%\setcounter{page}{1}
 \tableofcontents
 \newpage
 
@@ -157,26 +155,26 @@ TODO
 
 \section{Charakteristika města Třebíče}
 
-Třebíč je nepříliš velké město na jihovýchodý části Kraje vysočina.
-I přes jeho velikost, však hrálo velkou roli v historii kraje.
-Má proto i dvě památky UNESCO -- Třebíčskou židovskou čtvrť a baziliku svatého Prokopa.
-Počátky jeho historie jsou však, spíše než s národem židovským, spjaty s benediktýnským klášterem, dnešním zámkem.
+Dnes je Třebíč nepříliš velké město v jihovýchodní části kraje Vysočina.
+I přes jeho velikost, však hrálo důležitou roli v historii okolí.
+O tom svědčí i fakt, že má dokonce dvě památky zapsané v seznamu UNESCO a to Třebíčskou židovskou čtvrť a baziliku svatého Prokopa.
+Počátky jeho historie jsou však, spíše než s národem židovským, spjaty s benediktýnským klášterem, dnešním zámkem v Třebíči.
 Je možné, že na území Třebečského lesa se nacházelo i prehistorické osídlení, o tom však nemáme důkazy.
 
 \section{Vznik kláštera}
 
 Dějiny kláštera se začínají psát koncem 11. století.
-Jednalo se o dobu kdy na českém i moravském území docházelo k řadě potyček mezi jednotlivými Přemyslovci a moravskými knížeti a právě tyto konflikty měly za následek založení kláštera..
+Jednalo se o dobu kdy na českém i moravském území docházelo k řadě konfliktů mezi jednotlivými Přemyslovci a moravskými knížeti, právě ty měly za následek založení kláštera.
 Nejvíce k založení kláštera napomohlo chování Břetislava II., který jako svého následníka jmenoval svého nevlastního syna Bořivoje II., místo brněnského knížete Oldřicha\footnote{ten měl být králem dle rodové tradice Přemyslovců}.
-Kvůli této a dalším neshodám uspořádal roku 1099 král Břetislav tažení na brněnský hrad, což donutilo Oldřicha a jeho bratra Litolda (lze i Litola), jenž spravoval úděl Znojemský, k útěku.
-Po dvou letech vlády Bořivoje se však Oldřich a Litold opět vrátily na své úděly, využily šance kdy se po smrti Břetislava II Bořivoj II. musel vrátit do Prahy.
+Kvůli této a dalším neshodám uspořádal roku 1099 král Břetislav tažení na brněnský hrad, což donutilo Oldřicha a jeho bratra Litolda, jenž spravoval znojemský úděl, k útěku.
+Po dvou letech vlády Bořivoje se však Oldřich a Litold opět vrátili na své úděly, využili šance kdy se po smrti Břetislava II. Bořivoj II. musel vrátit do Prahy.
 
-Již při cestě zpět si uvědomují, že západní hranice jejich údělu jsou příliš daleko od hradů v Brně a Znojmě.
-Z tohoto důvodu v roce 1101 zakládají v prostorách Třebečského lesa téměř na hranicích s Přibyslavickem benediktýnský klášter.
-Klášter tedy není založen v duchu šíření víry, ale má sloužit jako předsunuté opevnění a kolonizační centrum.
-Ji6 v roce 1101\footnote{\cite{Uhlir1978}, strana 20} je postaven kostelík sv. Benedikta, který o 3 roky později vysvětil pražský biskup Heřman.
-Dále roku 1109\footnote{\cite{Uhlir1978}, strana 20} je vysvěcen biskupem olomouckým Janem II. samotný klášterní chrám Nanebevztí Pany Marie.
-Klášter ihned po založení dostává darování, a to jak od Oldřicha a Litolda, tak i od jejich nástupců.
+Již při cestě zpět si uvědomily, že západní hranice jejich údělu jsou příliš daleko od hradů v Brně a Znojmě.
+Z tohoto důvodu v roce 1101 založili v prostorách Třebečského lesa téměř na hranicích s Přibyslavickem benediktýnský klášter.
+Klášter měl sloužit jako předsunuté opevnění a kolonizační centrum.
+Již v roce 1101\footnote{c. d. \bibentry{Uhlir1978}} byl postaven kostelík sv. Benedikta, který o tři roky později vysvětil pražský biskup Heřman.
+Dále roku 1109\footnote{c. d. \bibentry{Uhlir1978}: 20} vysvětil biskup olomouckým Jan II. samotný klášterní chrám Nanebevztí Pany Marie.
+Klášter ihned po založení dostával různá územní darování, a to jak od Oldřicha a Litolda, tak i od jejich nástupců.
 Samotný Litold (\CrossOpenShadow 1112) a Oldřich (\CrossOpenShadow 1113) jsou dle slov Tomáše Pěšinky\footnote{Tomáš Petřinka z Čechorodu -- biskup, dějepisec, autor díla Mars Moravicus} pochováni v klášteře.
 
 \begin{figure}[h]
@@ -224,10 +222,10 @@ Samotný Litold (\CrossOpenShadow 1112) a Oldřich (\CrossOpenShadow 1113) jsou 
 \end{figure}
 \footnotetext{Dle opisu Kroniky Kosmovy, daruje vsi Břetislav, nejspíše se jedná o tohoto}
 
-Bohužel je jen málo pramenů z této doby, jako jediný zdroj o rané historii klášter máme Třebíčský (Brněnský) opis Kosmovy Kroniky\footnote{\cite{Uhlir1978}, strana 18}.
+Bohužel je jen málo pramenů z této doby, jako jediný zdroj o rané historii kláštera máme Třebíčský (Brněnský) opis Kosmovy Kroniky\footnote{c. d. \bibentry{Uhlir1978}: 18}.
 Do něho byla klášterním mnichem připsaná zmínka k roku 1115 o založení kláštera.
 Mnich také uvádí jaké vsi byly postupně darovány klášteru.
-Údaje jsou však sporné a pravděpodobně vycházel z pozdějších zdrojů, neboť počet darovaných vsí je dle vpisku 73, což značně převyšuje i pozdější čísla.
+Údaje jsou však sporné a pravděpodobně vycházel z pozdějších zdrojů, neboť počet darovaných vsí je dle vpisku sedmdesát tři, což značně převyšuje i pozdější čísla.
 Ve vpisku jsou i uvedeny vsi u kterých je pozdější připojení písemně doloženo.
 Existovala také klášterní kronika z roku 1201, jejímž autorem byl opat Tiburcius, ta se však ztratila.
 
@@ -235,34 +233,82 @@ Existovala také klášterní kronika z roku 1201, jejímž autorem byl opat Tib
 
 \subsection{Podklášteří}
 
-Vhodná poloha kláštera a jeho hradby přispěly k vzniku tržní osady.
+Vhodná poloha kláštera (procházelo okolím kláštera řada cest) a existence hradeb přispěly na přelomu 12. a 13. století k vzniku tržní osady.
 Ta se samovolně začínala formovat přímo pod klášterem na levém břehu řeky, klášterní hradby nebyly totiž dost rozsáhle aby celou osadu pojaly.
-Nově vzniklá obec Podklášteří ihned začala přitahovat kupce a židy z širokého okolí, což vedlo k jejímu rychlému růstu.
+Nově vzniklá obec Podklášteří ihned začala přitahovat kupce, ale i židy z širokého okolí, což vedlo k jejímu rychlému růstu.
 Za nedlouho tak začala být omezována svým umístěním, byla totiž obehnána skálami a ohrožována záplavami řeky Jihlavy.
-Podklášteří proto postupně ztrácelo na svém významu jakožto tržní osada a mnozí kupci odešli, zůstaly zde však židé, kteří položily základ židovskému městu\footnote{\cite{Uhlir1978}, strana 22}.
+Podklášteří proto postupně ztrácelo na svém významu jakožto tržní osada a mnozí kupci odešli, zůstaly zde však židé, kteří položily základ židovskému městu\footnote{c. d. \bibentry{Uhlir1978}: 22}.
 
-\subsection{vznik Starého města}
+\subsection{Vznik Starého města}
 %% přepsat
 V 1. třetině 12. století vznikla na příkaz klášterní vrchnosti nová tržní osada, dnešní Staré město.
 Ta se tentokrát nacházela na pravém břehu řeky Jihlavy, což umožňovalo více prostoru pro rozvoj.
-Ihned po vytvoření se také začala tvořit aglomerace okolo nové osady, můžeme zmínit ves na Polánce, či vsi Kosovice, Arklebice a Horku, jenž opat Lukáš roku 1225 vyměnil se znojemskou šlechtičnou za ves Oslavany, která se nacházely dál od kláštera.
-Stejně jako Podklášteří je byla i nová osada omezena svým umístěním, což s postupem času opět začalo brzdit vývoj na území.
+Ihned po vytvoření se také začala tvořit aglomerace okolo nové osady, můžeme zmínit ves na Polánce, či vsi Kosovice, Arklebice a Horku, jenž opat Lukáš roku 1225 vyměnil se znojemskou šlechtičnou za ves Oslavany, které se nacházely dál od kláštera.
+Stejně jako Podklášteří byla i nová osada omezena svým umístěním, což s postupem času opět začalo brzdit vývoj na území.
 Proto ještě v 1. polovině 13. století bylo založeno Nové město.
 
 
 \section{Založení města Třebíč}
-Město Třebíč bylo podobně jako Staré Město založeno z vůle opata, jenž si vyžádal povolení u krále Přemysla Otakara II. %% nebo Přemysl Otakar II.
+Město Třebíč bylo podobně jako Staré město založeno z vůle opata, jenž si vyžádal povolení u krále Přemysla Otakara II.
 Z toho důvodu se také o městu Třebíč hovoříme v této době jakožto o poddanském městu náležící církevní vrchnosti.
+Opat dále musel vést vyšší soudy, či rozhodoval o manství\footnote{nápravníci, lidé disponující svobodným lénem}.
 Opět se jednalo o strategický krok, města totiž disponovala různými privilegii, jako právo trhu či právo hradební, právem vářečným již disponovala Staržečska\footnote{Jiné označení Starého města, dnes čtvrť v Třebíči}.
-Prví písemná zmínka o městu Třebíč pochází z roku 1277, v níž opat Martin oceňuje lokátora Heřmana\footnote{\cite{Uhlir1978}, strana 27}, který město Třebíč založil.
+Prví písemná zmínka o městu Třebíč pochází z roku 1277, v níž opat Martin oceňuje lokátora Heřmana\footnote{c. d. \bibentry{Uhlir1978}: 27}, který město Třebíč založil.
 
 \subsubsection{Přestavba kláštera}
 
 Během 13. století dochází k rozsáhle přestavbě kláštera.
-Jsou vztyčeny definitivní klášterní budovy a roku 1260 je také dokončen klášterní chrám.
-Společně s přestavnou budov dochází k zlepšení opevnění kláštera.
+Byly vztyčeny definitivní klášterní budovy a roku 1260 byla dokončena stavba klášterního chrámu.
+Společně s přestavbou budov bylo přestavěn a vylepšen i hradební systém okolo kláštera.
 Bohužel během Bitvy o Třebíč\footnote{12. květen — 9. červen 1468, součást česko-uherských válek (Druhá válka husitská)} byla většina staveb zničena či poškozena.
+Postupem času vznikaly i další budovy patřící klášteru rozeseté po celém klášterem spravovaném území.
 
+\chapter{Pozdější vývoj města Třebíče}
+
+Město Třebíč se témeř okamžitě dostalo do problémů, díky bitvě na Moravském poli (26.srpen 1278) zavládla na Moravě nestabilní vláda a rostla moc menších knížat.
+Tito knížata poté pořádala loupeživé výpravy se snahou zmocnit se královského majetku, s tím že ohroženo byla i samotný Třebíč. % 38
+Situaci zachránil až nový král Jan Lucemburský, který sám Třebíč dvakrát navštívil.
+Město poté dále prosperovalo a jeho význam pomalu přerostl i samotný klášter.
+Výrazně pozdějšímu vývoji pomohlo privilegium markraběte Karla (Karel IV), díky kterému město získalo pevný právní řád.
+
+Do dalších problémů se dostává město po smrti Jana Jindřicha (\CrossOpenShadow 1378) díky konfliktům Joště a Prokopa, kteří usilovali o kontrolu nad Moravou.
+Tyto konflikty vyústily až v jakousi domácí válku, což vyvrcholilo koncem 14. století v těžkou hospodářskou krizi.
+Situaci uklidnil až král Václav IV. roku 1413, doba klidu však neměla dlouhého trvání, protože již roku 1415 se začal stupňovat boj proti církvi, díky kázání mistra Jana Husa. % 43
+
+\subsubsection{Třebíč a hustiská okupace}
+
+O samotném vývoji husitství v Třebíči nemáme žádné prameny, je však známo, že Třebíč udržovala vztahy se moravskými šlechtici, jež byli myšlence nakloněni.
+Během Žižkova tažení na Moravu se však třebíčský klášter dostal pod kontrolu husitů, z kláštera poté podnikaly výboje dál do okolí.
+Roku 1430, však Prokop Veliký město dobývá zpět, konečně se situace uklidnila až v roce 1435.
+Během hustiských válek došlo k výraznému hospodářskému úpadku, ze kterého se klášter dostával celá desetiletí. % 49-54
+
+\subsubsection{Třebíč během Česko-uherských válek}
+
+Třebíč měl po husitských válkách zájem o mír a byl tedy věrný králi Jiřímu z Poděbrad.
+Již 12. května 1468 se Třebíč dostala do obležení, a o dva dny později byla Matyášovými vojsky dobyta.
+Další boje se zaměřily na samotný klášter, ten obývalo asi čtyři tisíce lidí.
+6. června se česká vojska pokusila klášter zachránit, ale bez úspěchu, 15. června se posádka v klášteře definitivně vzdala.
+Po celých sedm let se bylo město opuštěné. % 54 - 56
+
+\subsubsection{Vláda Perštejnů}
+
+Na obnovách se začalo pracovat již roku 1474, s tím že nové město začalo vzrůstat na troskách starého.
+Celková restaurace včetně klášterního velkostatku však nebyla možná díky obrovským dluhům, jenž klášter čelil.
+Nejvíce pomohl Vilém z Perštejna\footnote{bohatý rod, ve službách Jagellovců, třebíčský statek je pod jeho kontrolou}, ten zavedl rybnikářství a započal opravy samotného kláštera.
+Roku 1507 Vilém dělí své území mezi syny, ačkoliv apeluje ve své závěti na nutnost oprav různých klášterů v okoli o tom třebíčském nepadla ani zmíňka, existence benediktínů mu bránila v převedení třebíče do dědičného vlastnictví.
+Déle se Třebíče ujímá Jan z Perštejna, který pokračuje v otcově politice, a na krátkou dobu město přesouvá pod nadvládu Jana Jetřicha.
+Samotný Jan z Perštena přiděluje městu další práva, z nichž je nejdůležitější právo mílové, které značně zlepší ekonomické postavení města.
+Obnoven byl na žádost městké rady i vypovídací dekret Jana Jetřicha Černohorského, s cílem omezit konkurence schopnost židovské populace ve městě.
+Po Janu(\CrossOpenShadow 1548) se vlády ujímá syn Vratislav, ten si již Třebíč převádí do dědičného vlastnictví. % 61 - 68/71
+% režijní feudální velkostatek
+
+\subsubsection{Vláda Osovců}
+Mezi polovinou 16. století a rokem 1613 je Třebíč državou Osovců, kdy Burian Osovský odkupuje Třebíčské panství.
+Vzhledem k ceně třebíčského panství se však Burian zadlužil, dluh se snažil vykompenzovat produkcí piva a souběžně omezoval práva města -- právo na pronájem, ale i právo mílové.
+Město proto podalo stížnost na zemský soud, na neuspěla, a tak se Třebíč odvolala k císaři.
+Ferdinant I. poté 7. března 1560 obnovuje platnost všech privilégií, zároveň napomíná samotného Buriana, ten již dále nepodnikal tak razantní kroky proti městu.
+
+Roku 1568 se vlády nad městem ujímá Smil Osovský z Doubravice\footnote{Jeden z důležitých pramenů doby, své paměti si zapisoval do Codexu Dubraviciana}
 
 \include{zaver}
 
