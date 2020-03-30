@@ -1,0 +1,64 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Fišer(2005)]{Fiser2005}
+{\sc Fišer, R.} (2005).
+\newblock \emph{Osudy židovských domů 1724 -- 1850}.
+\newblock Třebíč MMV.
+\newblock ISBN 80-85571-18-8.
+
+\bibitem[Hanáčková(2008)]{Hanackova2008}
+{\sc Hanáčková, J.} (2008).
+\newblock Židovské město v třebíči -- urbanismus a architektura.
+\newblock Master's thesis, Masarykova universita.
+
+\bibitem[Janák(1981)]{Janak1981}
+{\sc Janák, J.} (1981).
+\newblock \emph{Třebíč: Dějiny města II.}
+\newblock Blok.
+
+\bibitem[Klenovský(2003)]{Klenovsky2003}
+{\sc Klenovský, J.} (2003).
+\newblock \emph{Židovské památky Třebíče}.
+\newblock Akademické nakladatelsví CERM.
+\newblock ISBN 80-7204-285-8.
+
+\bibitem[Kračmová(2011)]{Kracmova2011}
+{\sc Kračmová, R.} (2011).
+\newblock Historie třebíčské židovské obce.
+\newblock Master's thesis, Jihočeská univerzita v Českých Budějovicích.
+
+\bibitem[Putík(2015)]{Putik2015}
+{\sc Putík, A.} (2015).
+\newblock \emph{Dějiny Židů v českých zemích v 10. -- 18. století}.
+\newblock Židovské muzeum v Praze.
+\newblock ISBN 978-80-87366-48-6.
+
+\bibitem[Pěkný(2001)]{Pekny2001}
+{\sc Pěkný, T.} (2001).
+\newblock \emph{Historie Židů v Čechách a na Moravě}.
+\newblock Sefer.
+\newblock ISBN 80-85924-33-1.
+
+\bibitem[Svobodová(2015)]{Svobodva2015}
+{\sc Svobodová, J.} (2015).
+\newblock Židovská obec v třebíči v letech 1850 - 1930.
+\newblock Master's thesis, Jihočeská univerzita v Českých Budějovicích.
+
+\bibitem[Uhlíř a~kol.(1978)Uhlíř, Fišer a Nováčková]{Uhlir1978}
+{\sc Uhlíř, J., Fišer, R. {\rm a} Nováčková, E.} (1978).
+\newblock \emph{Třebíč: Dějiny města I.}
+\newblock Blok.
+\newblock ISBN 80-23918-22-2.
+
+\bibitem[Wihoda(2010)]{Wihoda2010}
+{\sc Wihoda, M.} (2010).
+\newblock \emph{Morava v době knížectví 906-1197}.
+\newblock Lidové Noviny.
+\newblock ISBN 978-80-7106-563-0.
+
+\end{thebibliography}
