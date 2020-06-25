@@ -98,14 +98,14 @@ Děkuji také židovskému muzeu ve Třebíči, za poskytnutí bakalářských p
 \def\Abstrakt{%
 Práce pojednává o Židovském městě ve Třebíči.
 Jako první prochází historii celého města Třebíč poté se zaměřuje pouze na město židovské.
-U něho prochází historii od raných počátků židovského osídlení přes tvorbu ghetta po konec osídlení způsobený nacistickou genocidou.
+U něho probírá dějiny od raných počátků židovského osídlení přes tvorbu ghetta po konec osídlení způsobený nacistickou genocidou.
 Zmapuje také vztahy mezi šlechtou, měšťanstvem a Židy a jak se vyvíjeli v průběhu historie.
 Nakonec popíše dějiny několika staveb v Židovském městě.
 }
 \def\AbstraktEN{%
-Main topic of this paper is Jewish town in Třebíč.
-At the beginning it goes trough history of Třebíč as a whole and then focuses solely on Jewish town.
-There it first describes its history form the beginning of Jewish settlement here to end of Jewish community caused by the Nazi genocide.
+Main topic of this paper is the Jewish town in Třebíč.
+At the beginning it goes trough history of Třebíč as a whole and later focuses solely on Jewish town.
+In chapters dedicated to Jewish town paper first describes towns history form the beginning of Jewish settlement here to end of Jewish community caused by the Nazi genocide.
 After that it takes closer look on relations between aristocracy, Jewry and town folk and how they changed in coure of history.
 In the end paper describes history of few buildings in Jewish town.
 }
@@ -114,12 +114,14 @@ In the end paper describes history of few buildings in Jewish town.
 
 % 3 až 5 klíčových slov (doporučeno), každé uzavřeno ve složených závorkách
 \def\KlicovaSlova{%
-	{Třebíč}, {Židovsto}, {Židé na Moravě}, {Historie Židovstva}, {Podklášteří}
+	{Třebíč}, {Židovstvo}, {Židé na Moravě}, {Historie Židovstva}, {Podklášteří}
 }
 \def\KlicovaSlovaEN{%
 	{Trebitsh}, {Jewry}, {Jews in Moravia}, {Jewsish history}, {Podklášteří}
 }
 
+\def\KlicovaSlovaDE{%
+}
 
 %% Balíček hyperref, kterým jdou vyrábět klikací odkazy v PDF,
 %% ale hlavně ho používáme k uložení metadat do PDF (včetně obsahu).
@@ -132,14 +134,15 @@ In the end paper describes history of few buildings in Jewish town.
 
 %% Titulní strana a různé povinné informační strany
 \fancypagestyle{plain}{
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 \fancyhead[C]{}
 \fancyhead[L]{Ročníková práce -- Gymnázium, Praha 6, Arabská 14}
 \fancyhead[R]{\textbf{Židovské město v Třebíči}}
 \fancyfoot[L]{Vypracoval: Havránek Kryštof 2.E (Programování)}
 \fancyfoot[C]{}
 \fancyfoot[R]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
 }
 
 
@@ -159,8 +162,6 @@ In the end paper describes history of few buildings in Jewish town.
 \setcounter{page}{1}
 
 \chapter{Počátky města Třebíče}
-
-\section{Charakteristika města Třebíče}
 
 Dnes je Třebíč nepříliš velké město v jihovýchodní části kraje Vysočina.
 Hrálo však důležitou roli v historii okolí.
@@ -495,8 +496,6 @@ Město také trpělo akutním nedostatkem peněz, byly proto vydány dočasné b
 Celá řada měšťanů se dostala do finančních problémů a byla nucena prodat své domy.
 To mělo za následek další proti židovské nepokoje (1863 a 1866). \footnote{srov. \cite{Janak1981} str. 77--78}
 
-\section{Prusko-rakouské války}
-
 Během prusko-rakouské války došlo k poslednímu vzrůstu soukenictví díky armádním zakázkám,ty doprovázely i rekvizice, které město přišli až na 250 000 zl.
 Třebíč se navíc dočkala opět nepřátelské invaze, a to 13. července, kdy přitáhla pruská vojska o síle 35 000 mužů.
 Ta zde pobyla do 16. prosince.
@@ -608,7 +607,7 @@ K zřízení německé židovské obecné školy došlo až v roce 1787 díky p�
 Rabínské učiliště existovalo v Třebíči až od poloviny 19. soletí.\footnote{srov. \cite{Klenovsky2003} str. 23}
 Komunita se stále stabilně rozvíjela a v roce 1617 žilo v Podklášteří osmnáct židovských hospodářů, na Stařečce již žádná.\footnote{srov. \cite{Fiser2005} str. 25}
 
-Při převzetí panství Rudolfem Valdštejna dochází v roce 1629 ke snížení počtu rodin na třináct.
+Při převzetí panství Rudolfem z Valdštejna dochází v roce 1629 ke snížení počtu rodin na třináct.
 Důvod k tomuto úbytku zůstává zatím zahalen, je však možné, že souvisel s novou vrchností.
 Rudolf byl silný katolík a vůči Židům a nekatolíkům se nechoval zrovna ukázkově.\footnote{srov. \bibentry{Kracmova2011} str. 19}
 V urbáři z roku 1629 se zároveň dočteme, že na Židy navíc byla uvalena povinnost platit daň z vaření medu.
@@ -761,11 +760,6 @@ Město je od roku 1993 soustavně renovováno, ale sám můžu potvrdit, že maj
 
 \chapter{Vzájemné vztahy Židů se Třebíčí}
 
-Je nutno upozornit, že Židé tvořili a stále tvoří etnický blok, který má svojí vlastní identitu.
-Ta je dána jak rituály, které Židé provádějí, stravováním, kalendářem, tak i jejich historií.
-Rozdíly tak byly mezi Židy a křesťany v mnoha oblastech od dat svátků, po znalost jazyků, která Židům byla vlastní.
-Křesťané navíc trpěli antagonismem vůči Židovskému národu, omezovali proto jejich možnosti obživy, či až zacházely k násilným činům.
-Kapitola je dělena na dvě sekce a to na vztahy se šlechtou a s měšťany, o tom jak s komunitou zacházel klášter nemáme poznatky.
 
 \section{Soužití Židů se šlechtou}
 
@@ -834,7 +828,14 @@ Je nutné upozornit, že nenávist díky finanční nerovnosti nebyla opodstatn�
 V Židovském městě byla jen malá skupina skutečně bohatých a ti přispívali do chudinského spolku.
 Ten podporoval chudé obyvatele, kteří převažovali.\footnote{srov. \cite{Svobodva2015} str. 49--51}
 
-Antisemitské nálady se postupně uklidňovaly díky působení prezidenta T. G. Masaryka a také díky asimilací Židů do městského prostředí.
+\section{Vztah Židů k většinové společnosti ve 20. století}
+
+Židé se postupně asimilovaly do městského prostředí.
+Antisemitských útoků tak ubývalo a měšťané začali Židovskou menšinu tolerovat.
+Samotní Židé se projevovali jen pomocí kulturních aktivit a prostřednictvím ŽNO.
+Zda byl nějaký nárůst protižidovských útoků za doby protektorátu se mi nepodařilo zjistit.
+Nic však nenasvědčuje tomu, že by se Třebíč vymykal normě.
+
 
 \chapter{Stavby židovské čtvrti}
 
@@ -1072,7 +1073,7 @@ Počet pohřbených odhadl rabín dr. Samuel Pollak na 11 000 o pravdivosti toho
 	\caption[Mapa Židovského města \text{[online]} Mapy.cz. Dostupné z: \url{https://en.mapy.cz/zakladni?x=15.8789945&y=49.2182114&z=17&source=muni&id=5517} \text{[cit. 2020-03-28], zeditováno}]{
 		Mapa Židovského města
 	}
-	\label{fig:zhh}
+	\label{fig:map}
 \end{figure}
 
 \chapter*{}
